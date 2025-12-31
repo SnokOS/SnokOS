@@ -1,301 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Snok Linux - Penetration Testing Distribution</title>
-  <meta content="Snok Linux is a rolling release distribution designed for penetration testing, mobile security and reverse engineering and is optimized for security and performance." name="description">
-  <meta content="Snok Linux, viperlinux" name="keywords">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="SnokOS - Specialized in designing and developing websites, software, and systems. Supporting open-source solutions.">
+  <meta name="keywords" content="web development, software development, open source, system design, SnokOS">
+  <meta name="author" content="SnokOS">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="SnokOS - Build The Future">
+  <meta property="og:description"
+    content="Specialized in designing and developing websites, software, and systems of all kinds.">
+  <meta property="og:type" content="website">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <title>SnokOS - Build The Future</title>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/terminal.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-between">
 
-      <!-- Logo -->
-      <a href="index.html" class="logo"><img src="assets/img/logo-red-minimal.png" alt="viper-linux-logo" class="img-fluid"></a>
-
-      <!-- Navbar -->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="downloads.html">Downloads</a></li>
-          <li><a class="nav-link scrollto " href="#">Documentation</a></li>
-          <li><a class="nav-link scrollto" href="#">Community</a></li>
-          <li><a class="nav-link scrollto" href="">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-content">
+      <img src="assets/logo.png" alt="SnokOS" class="loading-logo">
+      <h1 class="loading-title gradient-text">SnokOS</h1>
+      <div class="loading-spinner">
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" style="background-image: url(assets/img/background-red.png);" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+  <!-- 3D Network Grid Background -->
+  <canvas id="network-canvas" class="network-background"></canvas>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="SnokOS Logo">
+        <span data-i18n="logo">SnokOS</span>
+      </a>
 
+      <a href="download.html" class="download-link">
+        <span data-i18n="downloadBtn">Download</span>
+        <span class="download-icon">⬇️</span>
+      </a>
 
-  <!-- Hero Slides -->
-      
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown" style="font-size: 64px;">Welcome to <span>Snok Linux</span></h2>
-          <p class="animate__animated animate__fadeInUp" style="font-size: 28px;">Snok Linux is a rolling release distribution designed for penetration testing, mobile security and reverse engineering and is optimized for security and performance.</p>
-          <a href="downloads.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+      <div class="nav-controls">
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>
+          <span data-i18n="heroTitle">Build The Future With</span>
+          <br>
+          <span class="gradient-text" data-i18n="heroTitleHighlight">SnokOS</span>
+        </h1>
+        <p data-i18n="heroSubtitle">
+          Specialized in designing and developing websites, software, and systems of all kinds. Supporting open-source
+          solutions.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary" onclick="smoothScroll('#contact')">
+            <span data-i18n="ctaGetStarted">Get Started</span>
+            <span>→</span>
+          </button>
+          <button class="btn btn-secondary" onclick="smoothScroll('#services')">
+            <span data-i18n="ctaLearnMore">Learn More</span>
+          </button>
         </div>
       </div>
-    
-      <!-- Hero Navigation
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
-    -->
     </div>
   </section>
-  
-  <!-- End Hero -->
 
-  <main id="main">
-
-    <!-- ======= Icon Boxes Section ======= -->
-    <section id="icon-boxes" class="icon-boxes">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-time"></i></div>
-              <h4 class="title"><a href="">Performance</a></h4>
-              <p class="description">Developed to be lightweight and performance efficient with limited bloat. Works well on older hardware</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-lock"></i></div>
-              <h4 class="title"><a href="">Security</a></h4>
-              <p class="description">Regularly updated with a hardened kernel. Comes pre-packaged with various security tools and configurations.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-wrench"></i></div>
-              <h4 class="title"><a href="">Made to order</a></h4>
-              <p class="description">We have multiple distributions for various engagements, from pentesting to reverse engineering.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-laptop"></i></div>
-              <h4 class="title"><a href="">Portability</a></h4>
-              <p class="description">Developed with cloud computing in mind. You can deploy and use Snok Linux on the cloud. </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    
-    <!-- End Icon Boxes Section -->
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 style="color: black; font-size: 56px;">Why Choose Viper?</h2>
-          <p>Snok Linux is designed a plethora of use cases, from penetration testing to reverse engineering and malware analysis.</p>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6">
-            
-        </div>
-      
-      <!-- Terminal -->
-      <div content="width=device-width, initial-scale=1.0" class='console-container' style="margin-top: 120px;"><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-    
-      </div>
-    </section>
-    
-    <!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container-fluid">
-
-        <div class="row">
-
-        <!--YouTube Video-->
-          <div class="col-lg-5 align-items-stretch position-relative video-box"  data-aos="fade-right">
-            <a href="" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          </div>
-          
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
-
-            <div class="content">
-              <h3>Snok Linux is developed for penetration testers <strong>by penetration testers</strong></h3>
-              <p>
-                Are you tired of slow, unstable and bloated pentesting distros that don't have the tools you need? if so, Snok Linux is for you.
-              </p>
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li data-aos="fade-up" data-aos-delay="100">
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Performance <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Snok Linux offers a fast and bloat-free experience across the board. We also offer base distributions that can be customized based on your needs.
-                    </p>
-                  </div>
-                </li>
-
-                <li data-aos="fade-up" data-aos-delay="200">
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Stability & Security <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Snok Linux offers a stable and secure solution for security professionals. Our distributions are shipped with a hardened kernel and stable packages to ensure your experience is smooth and error free so that you can focus on your work rather than fixing issues.
-                    </p>
-                  </div>
-                </li>
-
-                <li data-aos="fade-up" data-aos-delay="300">
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Made to order <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      We offer a collection of distributions designed and developed for specific industry use cases, from penetration testing to mobile security and reverse engineering. Download the distribution that meets your professional requirements and that is designed for your specific use case.
-                    </p>
-                  </div>
-                </li>
-
-                <li data-aos="fade-up" data-aos-delay="300">
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Desktop Environments <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      We understand that everyone is different and you may not like certain desktop environments, as a result, our distribution also offersa range of  different desktop environments so that you feel at home. Choose between Mate, Gnome, KDE and i3.
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    
-    <!-- End Why Us Section -->
-
-
-  </main>
-  
-  <!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About</h3>
-            <hr class="rounded">
-            <!--<img src="assets/img/logo-red-minimal.png" style="width:200px;padding-bottom: 10px;">-->
-            <p>Snok Linux is a rolling release distribution designed for penetration testing, mobile security and reverse engineering and is optimized for security and performance.</p>
-          </div>
-          <div class="social-links col-lg-3 footer-info">
-            <h3>Social Links</h3>
-            <hr class="rounded">
-            <a href="https://twitter.com/SnokLinux" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://github.com/SnokOS" class="github"><i class="bx bxl-github"></i></a>
-            <a href="https://gitlab.com/SnokLinux" class="gitlab"><i class="bx bxl-gitlab"></i></a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4 style="font-variant:normal;">Useful Links</h4>
-            <hr class="rounded">
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Distrowatch Page</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Forum</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <hr class="rounded">
-            <p>
-              <strong>Email:</strong><a style="color:red" href="mailto:SnokSoft@gmail.com"> SnokSoft@gmail.com</a><br>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!-- Copyright Section-->
+  <!-- Services Section -->
+  <section class="section" id="services">
     <div class="container">
-      <div class="copyright">
-        <p><strong>Snok Linux </strong> &copy is a registered trademark of HackerSploit. </p>
-        <p>Copyright &copy;<strong><span> Snok Linux 2021</span></strong>. All Rights Reserved </p>
+      <div class="section-title fade-in">
+        <h2 data-i18n="servicesTitle">Our Services</h2>
+        <p data-i18n="servicesSubtitle">Comprehensive solutions for your digital needs</p>
       </div>
-      <div class="credits">
-        <!--Made with love from Kenya</a> -->
+
+      <div class="services-grid">
+        <!-- Service 1: Web Development -->
+        <div class="service-card fade-in">
+          <div class="service-icon">🌐</div>
+          <h3 data-i18n="service1Title">Web Development</h3>
+          <p data-i18n="service1Desc">Modern, responsive websites built with cutting-edge technologies and best
+            practices.</p>
+        </div>
+
+        <!-- Service 2: Software Development -->
+        <div class="service-card fade-in">
+          <div class="service-icon">💻</div>
+          <h3 data-i18n="service2Title">Software Development</h3>
+          <p data-i18n="service2Desc">Custom software solutions tailored to your business requirements and workflows.
+          </p>
+        </div>
+
+        <!-- Service 3: System Design -->
+        <div class="service-card fade-in">
+          <div class="service-icon">⚙️</div>
+          <h3 data-i18n="service3Title">System Design</h3>
+          <p data-i18n="service3Desc">Scalable system architecture and infrastructure design for enterprise
+            applications.</p>
+        </div>
+
+        <!-- Service 4: Open Source -->
+        <div class="service-card fade-in">
+          <div class="service-icon">🔓</div>
+          <h3 data-i18n="service4Title">Open Source</h3>
+          <p data-i18n="service4Desc">Contributing to and supporting open-source projects and communities worldwide.</p>
+        </div>
       </div>
     </div>
-  <!-- End Copyright Section-->
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text fade-in">
+          <h2 data-i18n="aboutTitle">About SnokOS</h2>
+          <h3 class="gradient-text" data-i18n="aboutSubtitle">Innovation Meets Excellence</h3>
+          <p data-i18n="aboutText1">
+            SnokOS is a leading technology company specializing in web development, software engineering, and system
+            architecture. We are passionate about creating innovative solutions that empower businesses and individuals.
+          </p>
+          <p data-i18n="aboutText2">
+            Our commitment to open-source software drives us to contribute to the global developer community while
+            delivering exceptional, customized solutions for our clients.
+          </p>
+          <p data-i18n="aboutText3">
+            With a team of experienced developers and designers, we transform ideas into reality using modern
+            technologies and industry best practices.
+          </p>
+        </div>
+
+        <div class="about-image fade-in">
+          <img src="assets/logo.png" alt="SnokOS"
+            style="padding: 3rem; background: var(--glass-bg); backdrop-filter: var(--glass-blur); border-radius: var(--radius-lg);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Website Mockup Section -->
+  <section class="section mockup-section" id="mockup">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 data-i18n="mockupTitle">Experience Our Design</h2>
+        <p data-i18n="mockupSubtitle">Interactive 3D preview with glassmorphism effects</p>
+      </div>
+
+      <div class="mockup-container fade-in">
+        <div class="mockup-3d">
+          <div class="mockup-screen">
+            <div class="mockup-browser">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="browser-url">snokos.com</div>
+              </div>
+              <div class="browser-content">
+                <div class="glass-card card-1">
+                  <div class="card-icon">🚀</div>
+                  <h3>Modern Design</h3>
+                  <p>Beautiful interfaces</p>
+                </div>
+                <div class="glass-card card-2">
+                  <div class="card-icon">💎</div>
+                  <h3>Premium Quality</h3>
+                  <p>Top-notch development</p>
+                </div>
+                <div class="glass-card card-3">
+                  <div class="card-icon">⚡</div>
+                  <h3>Fast Performance</h3>
+                  <p>Optimized code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-reflection"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-container">
+        <div class="section-title fade-in">
+          <h2 data-i18n="contactTitle">Get In Touch</h2>
+          <p data-i18n="contactSubtitle">Let's build something amazing together</p>
+        </div>
+
+        <form class="contact-form fade-in">
+          <div class="form-group">
+            <label for="name" data-i18n="contactName">Your Name</label>
+            <input type="text" id="name" name="name" data-i18n="contactName" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="contactEmail">Your Email</label>
+            <input type="email" id="email" name="email" data-i18n="contactEmail" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="contactMessage">Your Message</label>
+            <textarea id="message" name="message" data-i18n="contactMessage" placeholder="Your Message"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <span data-i18n="contactSubmit">Send Message</span>
+            <span>✉️</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <!-- About Column -->
+        <div class="footer-section">
+          <h3 data-i18n="footerAbout">About</h3>
+          <p data-i18n="footerAboutText">
+            SnokOS is dedicated to delivering cutting-edge technology solutions and supporting the open-source
+            community.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <span>📦</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <span>🐦</span>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <span>💼</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Email">
+              <span>✉️</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-section">
+          <h3 data-i18n="footerQuickLinks">Quick Links</h3>
+          <ul>
+            <li><a href="#services" data-i18n="footerServices">Services</a></li>
+            <li><a href="#about" data-i18n="footerAboutUs">About Us</a></li>
+            <li><a href="#contact" data-i18n="footerContact">Contact</a></li>
+            <li><a href="#" data-i18n="footerBlog">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect Column -->
+        <div class="footer-section">
+          <h3 data-i18n="footerConnect">Connect</h3>
+          <ul>
+            <li>📧 SnokSoft@gmail.com</li>
+            <li>📱 +216 26 360 802</li>
+            <li>📍 tunisia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footerCopyright">© 2025 SnokOS. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
-  <!-- End Footer -->
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/terminal.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 
 </html>

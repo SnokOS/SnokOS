@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Download SnokOS Linux - A modern, beautiful Linux distribution for developers and enthusiasts">
+    <meta name="keywords" content="SnokOS, Linux, download, operating system, open source">
+
+    <title>Download SnokOS Linux</title>
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="download-styles.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <img src="assets/logo.png" alt="SnokOS" class="loading-logo">
+            <h1 class="loading-title gradient-text">SnokOS</h1>
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D Network Grid Background -->
+    <canvas id="network-canvas" class="network-background"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="SnokOS Logo">
+                <span>SnokOS</span>
+            </a>
+
+            <a href="index.html" class="back-link">
+                <span>← Back to Home</span>
+            </a>
+
+            <div class="nav-controls">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+
+                <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Download Hero -->
+    <section class="download-hero">
+        <div class="container">
+            <div class="download-hero-content fade-in">
+                <h1>
+                    <span class="gradient-text" data-i18n="downloadHeroTitle">Download SnokOS Linux</span>
+                </h1>
+                <p data-i18n="downloadHeroSubtitle">
+                    A modern, beautiful, and powerful Linux distribution designed for developers, creators, and
+                    enthusiasts.
+                </p>
+                <div class="version-info">
+                    <span class="version-badge">v2.0 LTS</span>
+                    <span class="release-date">Released: December 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-i18n="featuresTitle">Key Features</h2>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🚀</div>
+                    <h3 data-i18n="feature1Title">Lightning Fast</h3>
+                    <p data-i18n="feature1Desc">Optimized for performance with fast boot times and responsive desktop
+                        experience.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-i18n="feature2Title">Beautiful Design</h3>
+                    <p data-i18n="feature2Desc">Modern, elegant interface with customizable themes and stunning visual
+                        effects.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔒</div>
+                    <h3 data-i18n="feature3Title">Secure & Private</h3>
+                    <p data-i18n="feature3Desc">Built with security in mind, with regular updates and privacy-focused
+                        defaults.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💻</div>
+                    <h3 data-i18n="feature4Title">Developer Friendly</h3>
+                    <p data-i18n="feature4Desc">Pre-installed development tools and easy package management for
+                        developers.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔓</div>
+                    <h3 data-i18n="feature5Title">Open Source</h3>
+                    <p data-i18n="feature5Desc">100% free and open-source software, built by the community for the
+                        community.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3 data-i18n="feature6Title">Easy to Use</h3>
+                    <p data-i18n="feature6Desc">User-friendly interface perfect for both beginners and advanced users.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Slider -->
+    <section class="section screenshots-section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-i18n="screenshotsTitle">See SnokOS in Action</h2>
+
+            <div class="slider-container fade-in">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="assets/screenshot1.png" alt="SnokOS Desktop">
+                        <p class="slide-caption" data-i18n="screenshot1Caption">Beautiful Desktop Environment</p>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/screenshot2.png" alt="SnokOS Features">
+                        <p class="slide-caption" data-i18n="screenshot2Caption">Modern System Features</p>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/screenshot3.png" alt="SnokOS Terminal">
+                        <p class="slide-caption" data-i18n="screenshot3Caption">Powerful Terminal Experience</p>
+                    </div>
+                </div>
+
+                <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section download-section">
+        <div class="container">
+            <div class="download-container fade-in">
+                <h2 class="gradient-text" data-i18n="downloadTitle">Ready to Get Started?</h2>
+                <p data-i18n="downloadSubtitle">Download SnokOS Linux and experience the future of computing.</p>
+
+                <div class="download-options">
+                    <div class="download-option">
+                        <h3>💿 ISO Image</h3>
+                        <p class="file-size">2.8 GB</p>
+                        <button class="btn btn-primary download-btn" onclick="downloadISO()">
+                            <span data-i18n="downloadISO">Download ISO</span>
+                            <span>⬇️</span>
+                        </button>
+                    </div>
+
+                    <div class="download-option">
+                        <h3>🔐 Torrent</h3>
+                        <p class="file-size">Faster Download</p>
+                        <button class="btn btn-secondary download-btn" onclick="downloadTorrent()">
+                            <span data-i18n="downloadTorrent">Download Torrent</span>
+                            <span>🔗</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="system-requirements">
+                    <h3 data-i18n="requirementsTitle">System Requirements</h3>
+                    <ul>
+                        <li data-i18n="req1">Processor: 64-bit dual-core CPU</li>
+                        <li data-i18n="req2">RAM: 4 GB minimum (8 GB recommended)</li>
+                        <li data-i18n="req3">Storage: 25 GB available space</li>
+                        <li data-i18n="req4">Graphics: OpenGL 3.3 compatible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SnokOS Linux</h3>
+                    <p>A modern Linux distribution for everyone.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Installation Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 SnokOS. All rights reserved. Open Source Software.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="download-script.js"></script>
+</body>
+
+</html>
