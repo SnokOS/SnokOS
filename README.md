@@ -187,9 +187,9 @@ SnokOS supports open-source! Contributions, issues, and feature requests are wel
 
 ## 📧 Contact
 
-- **Email:** info@snokos.com
-- **Phone:** +1 (555) 123-4567
-- **Location:** Global
+- **Email:** SnokSoft@gmail.com
+- **Phone:** +216 26 360 802
+- **Location:** Tunis
 
 ---
 

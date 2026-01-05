@@ -55,6 +55,11 @@ const translations = {
     footerContact: "Contact",
     footerBlog: "Blog",
     footerConnect: "Connect",
+    footerContactHeader: "Contact",
+    footerEmailLabel: "Email",
+    footerPhoneLabel: "Phone",
+    footerLocationLabel: "Location",
+    locationName: "Tunis",
     footerCopyright: "© 2025 SnokOS. All rights reserved.",
 
     // Mockup Section
@@ -113,6 +118,11 @@ const translations = {
     footerContact: "Contact",
     footerBlog: "Blog",
     footerConnect: "Connecter",
+    footerContactHeader: "Contact",
+    footerEmailLabel: "Email",
+    footerPhoneLabel: "Téléphone",
+    footerLocationLabel: "Localisation",
+    locationName: "Tunis",
     footerCopyright: "© 2025 SnokOS. Tous droits réservés.",
 
     // Mockup Section
@@ -171,6 +181,11 @@ const translations = {
     footerContact: "اتصل بنا",
     footerBlog: "المدونة",
     footerConnect: "تواصل",
+    footerContactHeader: "تواصل",
+    footerEmailLabel: "البريد الإلكتروني",
+    footerPhoneLabel: "الهاتف",
+    footerLocationLabel: "الموقع",
+    locationName: "تونس",
     footerCopyright: "© 2025 SnokOS. جميع الحقوق محفوظة.",
 
     // Mockup Section
@@ -184,7 +199,7 @@ const translations = {
 // ============================================
 
 let currentLang = localStorage.getItem('language') || 'en';
-let currentTheme = localStorage.getItem('theme') || 'light';
+let currentTheme = localStorage.getItem('theme') || 'dark';
 
 // ============================================
 // Language Switching
