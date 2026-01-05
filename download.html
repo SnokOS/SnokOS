@@ -168,21 +168,47 @@
                 <p data-i18n="downloadSubtitle">Download SnokOS Linux and experience the future of computing.</p>
 
                 <div class="download-options">
-                    <div class="download-option">
-                        <h3>💿 ISO Image</h3>
-                        <p class="file-size">2.8 GB</p>
-                        <button class="btn btn-primary download-btn" onclick="downloadISO()">
-                            <span data-i18n="downloadISO">Download ISO</span>
-                            <span>⬇️</span>
-                        </button>
+                    <!-- Option 1: Linux -->
+                    <div id="option-linux" class="download-option active" onclick="selectOption(this, 'linux-debian')">
+                        <h3 data-i18n="downloadLinuxTitle">Download SnokOS Linux</h3>
+                        <p data-i18n="downloadLinuxDesc">A modern Linux distribution for developers and enthusiasts.</p>
+
+                        <div class="download-list">
+                            <button class="btn btn-primary download-btn" onclick="downloadISO('linux-debian')">
+                                <span data-i18n="downloadDebian">Debian Edition</span>
+                                <span>⬇️</span>
+                            </button>
+                            <button class="btn btn-secondary download-btn" onclick="downloadISO('linux-ubuntu')">
+                                <span data-i18n="downloadUbuntu">Ubuntu Edition</span>
+                                <span>⬇️</span>
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="download-option">
-                        <h3>🔐 Torrent</h3>
-                        <p class="file-size">Faster Download</p>
-                        <button class="btn btn-secondary download-btn" onclick="downloadTorrent()">
-                            <span data-i18n="downloadTorrent">Download Torrent</span>
-                            <span>🔗</span>
+                    <!-- Option 2: Server -->
+                    <div id="option-server" class="download-option" onclick="selectOption(this, 'server-debian')">
+                        <h3 data-i18n="downloadServerTitle">Download SnokOS Server</h3>
+                        <p data-i18n="downloadServerDesc">Powerful server OS for enterprise applications.</p>
+
+                        <div class="download-list">
+                            <button class="btn btn-primary download-btn" onclick="downloadISO('server-debian')">
+                                <span data-i18n="downloadDebian">Debian Edition</span>
+                                <span>⬇️</span>
+                            </button>
+                            <button class="btn btn-secondary download-btn" onclick="downloadISO('server-ubuntu')">
+                                <span data-i18n="downloadUbuntu">Ubuntu Edition</span>
+                                <span>⬇️</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Option 3: NAS Storage -->
+                    <div id="option-nas" class="download-option" onclick="selectOption(this, 'nas')">
+                        <h3 data-i18n="downloadNasTitle">Download SnokOS NAS Storage</h3>
+                        <p data-i18n="downloadNasDesc">Specialized OS for Network Attached Storage solutions.</p>
+                        <button class="btn btn-primary download-btn" onclick="downloadISO('nas')">
+                            <span data-i18n="downloadBtn">Download</span>
+                            <span>⬇️</span>
                         </button>
                     </div>
                 </div>
@@ -190,10 +216,10 @@
                 <div class="system-requirements">
                     <h3 data-i18n="requirementsTitle">System Requirements</h3>
                     <ul>
-                        <li data-i18n="req1">Processor: 64-bit dual-core CPU</li>
-                        <li data-i18n="req2">RAM: 4 GB minimum (8 GB recommended)</li>
-                        <li data-i18n="req3">Storage: 25 GB available space</li>
-                        <li data-i18n="req4">Graphics: OpenGL 3.3 compatible</li>
+                        <li id="req-cpu" data-i18n="req1">Processor: 64-bit dual-core CPU</li>
+                        <li id="req-ram" data-i18n="req2">RAM: 4 GB minimum (8 GB recommended)</li>
+                        <li id="req-storage" data-i18n="req3">Storage: 25 GB available space</li>
+                        <li id="req-gpu" data-i18n="req4">Graphics: OpenGL 3.3 compatible</li>
                     </ul>
                 </div>
             </div>
@@ -233,6 +259,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
 
     <script src="script.js"></script>
     <script src="download-script.js"></script>
