@@ -1,4 +1,4 @@
-# SnokOS Website
+
 
 <div align="center">
   <img src="assets/logo.png" alt="SnokOS Logo" width="150">
@@ -12,29 +12,15 @@
   [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 </div>
 
----
-
-## 📄 License
-
-© 2025 SnokOS. All rights reserved.
-
----
-
-## 🤝 Contributing
+<div align="center">
+[ 🤝 Contributing 🤝 ]
 
 SnokOS supports open-source! Contributions, issues, and feature requests are welcome.
+</div>
 
----
-
-## 📧 Contact
-
-- **Email:** SnokSoft@gmail.com
-- **Phone:** +216 26 360 802
-- **Location:** Tunis
-
----
 
 <div align="center">
   <p>Built with ❤️ by SnokOS</p>
   <p>Supporting Open-Source Solutions Worldwide</p>
 </div>
+
